@@ -1,0 +1,7 @@
+# Set figure dimensions and save as a PNG
+fig.savefig("figure_3_5.png")
+fig.set_size_inches([3,5])
+
+# Set figure dimensions and save as a PNG
+fig.savefig("figure_5_3.png")
+fig.set_size_inches([5,3])
