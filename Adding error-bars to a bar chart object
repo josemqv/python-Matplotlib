@@ -1,0 +1,16 @@
+# Import pandas as pd
+import pandas as pdimport 
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+# Add a bar for the rowing "Height" column mean/std
+ax.bar("Rowing", mens_rowing["Height"], yerr=mens_rowing["Height"].std())
+
+# Add a bar for the gymnastics "Height" column mean/std
+ax.bar("gymnastics", mens_gymnastics["Height"], yerr=mens_gymnastics["Height"].std())
+
+# Label the y-axis
+ax.set_ylabel("Height (cm)")
+
+plt.show()
