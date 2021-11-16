@@ -1,5 +1,5 @@
 import pandas as pd
-import myplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 # Import sas7bdat package
 from sas7bdat import SAS7BDAT
 
