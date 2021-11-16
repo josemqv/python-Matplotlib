@@ -1,5 +1,6 @@
 # Import pandas
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Load Stata file into a pandas DataFrame: df
 df=pd.read_stata("disarea.dta")
