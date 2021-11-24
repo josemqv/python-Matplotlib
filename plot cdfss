@@ -1,0 +1,43 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Select educ
+educ = gss['educ']
+
+# Bachelor's degree
+bach = (educ >= 16)
+
+# Associate degree
+assc = (educ >= 14) & (educ < 16)
+
+# High school
+high = (educ <= 12)
+print(high.mean())
+
+income = gss['realinc'import pandas as pd
+
+# Select educ
+educ = gss['educ']
+
+# Bachelor's degree
+bach = (educ >= 16)
+
+# Associate degree
+assc = (educ >= 14) & (educ < 16)
+
+# High school
+high = (educ <= 12)
+print(high.mean())
+
+]
+
+# Plot the CDFs
+Cdf(income[high]).plot(label='High school')
+Cdf(income[assc]).plot(label='Associate')
+Cdf(income[bach]).plot(label='Bachelor')
+
+# Label the axes
+plt.xlabel('Income (1986 USD)')
+plt.ylabel('CDF')
+plt.legend()
+plt.show()
