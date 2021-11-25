@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt 
+
+# Extract age
+age = brfss["AGE"]
+
+# Plot the PMF
+pmf_age =Pmf(age)
+pmf_age.bar()
+
+# Label the axes
+plt.xlabel('Age in years')
+plt.ylabel('PMF')
+plt.show()
